@@ -9,7 +9,7 @@ pipeline {
                 expression { params.executeStages.contains('1') }
             }
             steps {
-                    echo "this is stage 1"
+                    echo "this is stage 1 done by me"
             }
         }
         stage('Stage 2') {
@@ -31,13 +31,5 @@ pipeline {
             }
         }
         
-        stage('Stage 10') {
-            when {
-                expression { params.executeStages.contains('10') }
-            }
-            steps {
-                echo "this is stage 10"
-            }
-        }
     }
 }
