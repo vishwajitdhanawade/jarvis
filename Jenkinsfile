@@ -10,6 +10,7 @@ pipeline {
             }
             steps {
                     echo "this is stage 1 done by me"
+                     echo "this is stage 1 update2"
             }
         }
         stage('Stage 2') {
